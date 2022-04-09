@@ -1,3 +1,2 @@
-import jarNet from "../../packages/jar.net";
-
-new jarNet.module().Get("MyModule")
+globalThis.Get("./myModule.js");
+globalThis.Get("./myModule2.js");
