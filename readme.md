@@ -1,38 +1,34 @@
-# JarJS
-JarJS is a framework to **facilitate** a creation of modules and creation of custom tags to HTML5
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Instalation
+## Getting Started
 
-* npm
+First, run the development server:
 
-    $ npm install jarjs@latest
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-* yarn
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-    $ yarn add jarjs
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Usage
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-To use the JarJS fist, create a file .ts, it will be the module. In file write:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-    function MyModule(): void {
-        console.log("I using JarJS!");
-    }
+## Learn More
 
-    new Module("MyModule",MyModule);
+To learn more about Next.js, take a look at the following resources:
 
-Lets view line per line.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-First, we create a function of type void, named "MyModule", this function write in console "I using JarJS!"
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-After this, we define the module using the Module class, with the first parameter is the name of the module end the second is the initalizator, it is what initalize the module, is this case, write is console.
+## Deploy on Vercel
 
-To get the module create the index.html file and write:
-    
-    import jarJS from "./modules/jarjs.net.js";
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    new jarJS.module().get("./MyModule.js");
-
-Ok, this code import the file "jarjs.net.js" and execute a function gamed "get", this function execute the initalizator of the module.
-
-Wait before leave, it is a part of the usage, you want more informations? Entry in my website [JarJS](https://docs.jarjs.com/?page=GetStart)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
